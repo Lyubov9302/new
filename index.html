@@ -4,11 +4,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Business promotion</title>
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@500;700&family=Montserrat:wght@400;500;600;700&family=Poppins:wght@400;500;600;700;800&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css" >
   </head>
 
+
+
   <body>
-    <header>
-      <a href="./index.html">
+    <header class="header">
+      <div class="container header-container">
+      <a href="./index.html" class="logo">
         <img 
         src="./images/logo.svg"
          alt="logo" 
@@ -16,221 +26,269 @@
          height="36" >
          Product
       </a>
-      <nav>
-        <ul>
-          <li><a href="./index.html">Product</a></li>
-          <li><a href="./pricing.html">Pricing</a></li>
-          <li><a href="./customer.html">Customers</a></li>
-          <li><a href="">Resources</a></li>
+      <nav class="header-nav">
+        <ul class="header-nav-list">
+          <li class="header-nav-item"><a class="header-nav-link current" href="./index.html">Product</a></li>
+          <li class="header-nav-item"><a class="header-nav-link" href="./pricing.html">Pricing</a></li>
+          <li class="header-nav-item"><a class="header-nav-link" href="./customer.html">Customers</a></li>
+          <li class="header-nav-item"><a class="header-nav-link" href="">Resources</a></li>
         </ul>
       </nav>
-      <ul>
-        <li><button type="button">Sign In</button></li>
-        <li><button type="button">Sign Up</button></li>
+      <ul class="header-btn-list">
+        <li class="header-btn-item"><button class="header-btn" type="button">Sign In</button></li>
+        <li class="header-btn-item"><button class="header-btn" type="button">Sign Up</button></li>
       </ul>
+    </div>
     </header>
 
     <main>
       <!-- HERO SECTION -->
-      <section>
-        <h1>Work at the speed of thought</h1>
-        <p>
+      <section class="hero">
+        <div class="container hero-container">
+        <div class="hero-box">
+        <h1 class="hero-title">Work at the speed of thought</h1>
+        <p class="hero-text">
           Tools, tutorials, design and innovation experts, all in one place! The
           most intuitive way to imagine your next user experience.
         </p>
-        <ul>
-          <li><button type="button">Get started</button></li>
-          <li><button type="button">Watch the Video</button></li>
+        <ul class="hero-list">
+          <li class="hero-item"><button class="btn hero-btn" type="button">Get started</button></li>
+          <li class="hero-item"><button class="second-hero-btn hero-btn" type="button">Watch the Video</button></li>
         </ul>
+      </div>
         <img
           src="./images/hero-img.svg"
           alt="People are interacting via smartphones and app"
           width="610"
+          class="hero-img"
         />
+      </div>
       </section>
 
-      <section>
-        <h2>Product was Built Specifically for You</h2>
-        <ul>
-          <li>
+      <section class="product">
+        <div class="container">
+        <h2 class="product-title">Product was Built Specifically for You</h2>
+        <ul class="product-list">
+          <li class="product-item">
             <img
               src="./images/icon-1.svg"
               alt="Green clicking icon"
               width="54"
+              class="product-img"
             />
-            <h3>First click tests</h3>
-            <p>While most people enjoy casino gambling,</p>
+            <h3 class="product-subtile">First click tests</h3>
+            <p class="product-descr">While most people enjoy casino gambling,</p>
           </li>
-          <li>
+          <li class="product-item">
             <img
               src="./images/icon-2.svg"
               alt="Blue survey icon"
               width="54"
+              class="product-img"
             />
-            <h3>Design surveys</h3>
-            <p>Sports betting, lottery and bingo playing for the fun</p>
+            <h3 class="product-subtile">Design surveys</h3>
+            <p class="product-descr">Sports betting, lottery and bingo playing for the fun</p>
           </li>
-          <li>
+          <li class="product-item">
             <img
               src="./images/icon-3.svg"
               alt="Preference purple icon"
               width="54"
+              class="product-img"
             />
-            <h3>Preference tests</h3>
-            <p>The Myspace page defines the individual.</p>
+            <h3 class="product-subtile">Preference tests</h3>
+            <p class="product-descr">The Myspace page defines the individual.</p>
           </li>
-          <li>
+          <li class="product-item">
             <img
               src="./images/icon-4.svg"
               alt="Red testing icon"
               width="54"
+              class="product-img"
             />
-            <h3>Five second tests</h3>
-            <p>Personal choices and the overall personality of the person.</p>
+            <h3 class="product-subtile">Five second tests</h3>
+            <p class="product-descr">Personal choices and the overall personality of the person.</p>
           </li>
         </ul>
-        <button type="button">sign up now</button>
+        <button type="button" class="btn product-btn">sign up now</button>
+      
+      </div>
       </section>
 
-      <section>
-        <h2>Services</h2>
-        <ul>
-          <li>
-            <p>Effortless Validation for</p>
-            <h3>Management</h3>
-            <p>
+
+
+      <section class="services">
+        <div class="container">
+        <h2 class="visually-hidden">Services</h2>
+        <ul class="services-list">
+
+          
+          <li class="services-item">
+            <div class="parts-services">
+            <p class="services-text-title">Effortless Validation for</p>
+            <h3 class="services-subtitle">Management</h3>
+            <p class="services-text">
               The Myspace page defines the individual, his or her
               characteristics, traits, personal choices and the overall
               personality of the person.
             </p>
-            <ul>
-              <li>
-                <h4>Accessory makers</h4>
-                <p>
+            <ul class="services-sub-list">
+              <li class="services-sub-item">
+                <h4 class="services-extrasubtitle">Accessory makers</h4>
+                <p class="services-list-text">
                   While most people enjoy casino gambling, sports betting,
                   lottery and bingo playing for the fun
                 </p>
               </li>
-              <li>
-                <h4>Alterationists</h4>
-                <p>
+              <li class="services-sub-item">
+                <h4 class="services-extrasubtitle">Alterationists</h4>
+                <p class="services-list-text">
                   If you are looking for a new way to promote your business that
                   won't cost you more money,
                 </p>
               </li>
             </ul>
-
+          </div>
             <img
               src="./images/management-img.svg"
               alt="Well-managed folders "
               width="540"
+              class="subtitle-img"
             />
           </li>
+       
 
-          <li>
+
+          <li class="services-item">
             <img
               src="./images/support-img.svg"
               alt="Search tab on a laptop"
               width="540"
+              class="subtitle-img"
             />
-            <p>Easier decision making for</p>
-            <h3>Customer Support</h3>
-            <p>
+            <div class="parts-services">
+            <p class="services-text-title">Easier decision making for</p>
+            <h3 class="services-subtitle">Customer Support</h3>
+            <p class="services-text">
               The Myspace page defines the individual, his or her
               characteristics, traits, personal choices and the overall
               personality of the person.
             </p>
-            <ul>
-              <li>
+            <ul class="services-sub-list">
+              <li class="services-sub-item">
                 <img
                   src="./images/yellow.svg"
                   alt="Yellow check icon"
                   width="35"
                 />
-                <p>Never worry about overpaying for your energy again.</p>
+                <p class="services-list-text">Never worry about overpaying for your energy again.</p>
               </li>
-              <li>
+              <li class="services-sub-item">
                 <img
                   src="./images/red.svg"
                   alt="Red check icon"
                   width="35"
                 />
-                <p>
+                <p class="services-list-text">
                   We will only switch you to energy companies that we trust and
                   will treat you right
                 </p>
               </li>
-              <li>
+              <li class="services-sub-item">
                 <img
                   src="./images/blue.svg"
                   alt="Blue check icon"
                   width="35"
                 />
-                <p>
+                <p class="services-list-text">
                   We track the markets daily and know where the savings are.
                 </p>
               </li>
             </ul>
+            </div>
           </li>
 
-          <li>
-            <p>Optimisation for</p>
-            <h3>Collaborative</h3>
-            <p>
+          <li class="services-item">
+            <div class="parts-services">
+            <p class="services-text-title">Optimisation for</p>
+            <h3 class="services-subtitle">Collaborative</h3>
+            <p class="services-text">
               Few would argue that, despite the advancements of feminism over
               the past three decades, women still face a double standard when it
               comes to their behavior.
             </p>
-            <ul>
-              <li>
-                <h4>Accessory makers</h4>
-                <p>
+            <ul class="services-sub-list">
+              <li class="services-sub-item">
+                <h4 class="services-extrasubtitle">Accessory makers</h4>
+                <p class="services-list-text">
                   While most people enjoy casino gambling, sports betting,
                   lottery and bingo playing for the fun
                 </p>
               </li>
-              <li>
-                <h4>Alterationists</h4>
-                <p>
+              <div class="services-sub-item">
+                <h4 class="services-extrasubtitle">Alterationists</h4>
+                <p class="services-list-text">
                   If you are looking for a new way to promote your business that
                   won't cost you more money,
                 </p>
               </li>
             </ul>
+            </div>
             <img
               src="./images/collaboration-img.svg"
               alt="Some folders"
               width="540"
+              class="subtitle-img"
             />
           </li>
         </ul>
+      </div>
       </section>
 
-      <section>
-        <h3>Quick & Easy Process</h3>
-        <p>
+
+
+
+      
+
+      <section class="process">
+        <div class="container">
+        <h3 class="process-title">Quick & Easy Process</h3>
+        <p class="process-text">
           Do you require some help for your project: Conception workshop,
           prototyping, marketing strategy, landing page, Ux/UI?
         </p>
-        <ul>
-          <li>
-            <img src="./images/avatar1.png" alt="Blonde woman" width="98" />
-            <p>I can take care of your pitch</p>
+        <ul class="process-list">
+          <li class="process-item">
+            <img src="./images/avatar1.png"
+             alt="Blonde woman"
+              width="98"
+               class="process-img"/>
+            <p class="process-descr">I can take care of your pitch</p>
           </li>
-          <li>
-            <img src="./images/avatar2.png" alt="Woman in a dark sweater" />
-            <p>I can prototype your app</p>
+          <li class="process-item">
+            <img src="./images/avatar2.png" 
+            alt="Woman in a dark sweater" 
+            width="98"
+            class="process-img"/>
+            <p class="process-descr">I can prototype your app</p>
           </li>
-          <li>
-            <img src="./images/avatar3.png" alt="Man in a red T-shirt" />
-            <p>I can help marketing strategy</p>
+          <li class="process-item">
+            <img src="./images/avatar3.png" 
+            alt="Man in a red T-shirt" 
+            width="98"
+            class="process-img"/>
+            <p class="process-descr">I can help marketing strategy</p>
           </li>
-          <li>
-            <img src="./images/avatar4.png" alt="Man in a striped T-shirt" />
-            <p>I can take care of your pitch</p>
+          <li class="process-item">
+            <img src="./images/avatar4.png" 
+            alt="Man in a striped T-shirt" 
+            width="98"
+            class="process-img"/>
+            <p class="process-descr">I can take care of your pitch</p>
           </li>
         </ul>
-        <button type="button">Contact our expert</button>
+        <button type="button" class="btn process-btn">Contact our expert</button>
+        </div>
       </section>
 
       <section>
