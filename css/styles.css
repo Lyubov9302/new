@@ -460,6 +460,7 @@ font-size: 16px;
 line-height: 1.75;
 color: #22343d;
 margin-bottom: 12px;
+padding-left: 24px;
 }
 
 .strateg-name {
@@ -483,6 +484,8 @@ font-weight: 700;
 font-size: 24px;
 line-height: 1.67;
 color: #22343d;
+max-width: 296px;
+ padding-left: 27px;
 }
 
 .strateg-item:nth-child(2) .strateg-subtitle {
@@ -529,6 +532,7 @@ width: 322px;
 height: 456px;
 box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.25);
 background-color: #fff;
+padding: 32px 72px;
 }
 
 .price-item:nth-child(2) {
@@ -537,7 +541,99 @@ background-color: #fff;
 
 
 
+.price-subtitle {
+font-weight: 700;
+font-size: 24px;
+line-height: 1.67;
+color: #22343d;
+text-align: center;
+margin-bottom: 8px;
+}
+
+
+.price-value {
+
+}
+
+
+.amount {
+    font-weight: 700;
+    font-size: 76px;
+    line-height: 1.31579;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #02897a;   
+    margin-right: 7px;
+}
+
+.currency {
+font-weight: 700;
+font-size: 24px;
+line-height: 1.25;
+letter-spacing: 0em;
+color: #02897a;
+
+}
+
+.per-month {
+font-weight: 400;
+font-size: 16px;
+line-height: 1.19;
+letter-spacing: 0.01em;
+color: #afafaf;
+}
+
+
+
+
+
+
+
+
+.price-descr {
+   
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 2.5;
+    color: #22343d; 
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+.price-card-item {
+font-weight: 500;
+font-size: 16px;
+line-height: 1.375;
+letter-spacing: 0.01em;
+color: #22343d;
+margin-bottom: 16px;
+text-align: center;
+}
+
+.price-card-item:last-child {
+margin-bottom: 30px;
+}
+
+.price-card-btn {
+border-radius: 8px;
+min-width: 139px;
+height: 44px;
+background-color: #02897a;
+font-weight: 600;
+font-family: "Montserrat", sans-serif;
+font-size: 18px;
+color: #fff;
+border: transparent;
+display: block;
+margin: 0 auto;
+}
+
+
+
+
+
 /* review */
+
 .review {
     padding-bottom: 100px;
 }
@@ -558,9 +654,9 @@ font-size: 16px;
 line-height: 1.75;
 letter-spacing: 0.01em;
 color: #22343d;
-text-align: center;
 max-width: 537px;
 margin-bottom: 40px;
+text-align: center;
 
 }
 
@@ -590,6 +686,47 @@ height: 240px;
 }
 
 
+.review-wrap {
+    display: flex;
+    gap: 14px;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+/* join */
+
+.join-container {
+border-radius: 32px;
+width: 968px;
+height: 345px;
+background-color: #02897a;
+background-image: url(../images/screen.svg);
+background-repeat: no-repeat;
+background-position: right;
+box-shadow: 0 0 32px 0 rgba(0, 0, 0, 0.15);
+padding: 49px 46px 56px 51px;
+margin: 0 auto;
+}
+
+.join-text {
+font-weight: 600;
+font-size: 32px;
+line-height: 1.514;
+color: #fff;
+max-width: 510px;
+margin-bottom: 46px;
+}
+
+.join-btn {
+border-radius: 8px;
+width: 150px;
+height: 50px;
+background-color: #fff;
+border: transparent;
+font-weight: 600;
+font-size: 20px;
+color: #02897a;
+}
 
 /* footer */
 
@@ -601,34 +738,45 @@ height: 240px;
 
 .logo-footer {
     margin-bottom: 20px;
+    margin-right: 146px;
 }
 
 
 .footer-socials-list {
     display: flex;
-   
     gap: 16px;
-    
+   
+}
+
+.footer-container {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.footer-part-two {
+    margin-right: 129px;
 }
 
 
 .footer-soclist-item {
+    display: flex;
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    fill: #edfffc;
+    background-color:  #edfffc;
+    align-items: center;
+    justify-content: center;
+
 }
-
-
 
 
 .icons-socials-svg {
     fill:#02897A;
 }
 
-.footer-soclist-link:hover + .footer-soclist-item, 
-.footer-soclist-link:focus + .footer-soclist-item {
-   fill: #02897A;
+.footer-soclist-item:hover,  
+.footer-soclist-item:focus {
+   background-color: #02897A;
 }
 
 
@@ -638,10 +786,12 @@ height: 240px;
 }
 
 
-
-
-.resources {
-margin-right: 129px;
+.subtitle-footer {
+font-weight: 500;
+font-size: 20px;
+line-height: 1.5;
+color: #22343d;
+margin-bottom: 8px;
 }
 
 .legal-stuff {
@@ -652,9 +802,7 @@ margin-right: 83px;
 /* input */
 
 
-.form-footer-container {
-    margin-right: 145px;
-}
+
 
 .text-footer-form {
 font-weight: 500;
@@ -675,7 +823,7 @@ margin-bottom: 30px;
 
 .footer-label {
     position: relative;
-    margin-bottom: 25px;
+  
 }
 
 .footer-input-icon {
@@ -683,7 +831,9 @@ margin-bottom: 30px;
     left: 12px;
     fill: #02897a; 
     top: 50%;
+    left: 12px;
     transform: translateY(-50%);
+    pointer-events: none;
 }
 
 .footer-input {
@@ -694,6 +844,8 @@ border-radius: 4px;
 background-color: transparent;
 outline: transparent;
 padding-left: 42px;
+margin-bottom: 25px;
+
 }
 
 .footer-input:focus {
@@ -714,10 +866,19 @@ background-color: #02897a;
 border-radius: 4px;
 min-width: 131px;
 height: 39px;
+border: transparent;
 }
 
 .footer-form-btn:hover {
     background-color: #22343d;
     border: none;
     color: #fff;
+}
+
+.footer-last-text {
+    font-weight: 400;
+font-size: 16px;
+line-height: 1.88;
+color: #22343d;
+text-align: center;
 }

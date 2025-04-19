@@ -306,39 +306,44 @@
         <p class="price-text">We offer competitive price</p>
         <ul class="price-list">
           <li class="price-item">
-            <h4>Free</h4>
-            <p>Brief price description</p>
-            <ul>
-              <li>0<span class="price-span">$per/month</span></li>
-              <li>Only 2 Operators</li>
-              <li>Notifications</li>
-              <li>Landing Pages</li>
+            <h4 class="price-subtitle">Free</h4>
+            <p class="price-descr">Brief price description</p>
+            
+              <div class="price-value">
+                <span class="amount">0</span><span class="currency">$</span>
+                <span class="per-month">per/month</span>
+              </div>
+
+              <ul class="price-card-list">
+              <li class="price-card-item">Only 2 Operators</li>
+              <li class="price-card-item">Notifications</li>
+              <li class="price-card-item">Landing Pages</li>
             </ul>
-            <button type="button">Order Now</button>
+            <button class="price-card-btn" type="button">Order Now</button>
           </li>
 
           <li class="price-item">
-            <h4>Standard</h4>
-            <p>Brief price description</p>
-            <ul>
-              <li>5<span class="price-span">$per/month</span></li>
-              <li>5+ Operators</li>
-              <li>Notifications</li>
-              <li>Landing Pages</li>
+            <h4 class="price-subtitle">Standard</h4>
+            <p class="price-descr">Brief price description</p>
+            <ul class="price-card-list">
+              <li class="price-card-item"><span class="price-span">5 $ per/month</span></li>
+              <li class="price-card-item">5+ Operators</li>
+              <li class="price-card-item">Notifications</li>
+              <li class="price-card-item">Landing Pages</li>
             </ul>
-            <button type="button">Order Now</button>
+            <button class="price-card-btn" type="button">Order Now</button>
           </li>
 
           <li class="price-item">
-            <h4>Premium</h4>
-            <p>Brief price description</p>
-            <ul>
-              <li>10<span class="price-span">$per/month</span></li>
-              <li>10+ Operators</li>
-              <li>Notifications</li>
-              <li>Landing Pages</li>
+            <h4 class="price-subtitle">Premium</h4>
+            <p class="price-descr">Brief price description</p>
+            <ul class="price-card-list">
+              <li class="price-card-item"><span class="price-span">10 $ per/month</span></li>
+              <li class="price-card-item">10+ Operators</li>
+              <li class="price-card-item">Notifications</li>
+              <li class="price-card-item">Landing Pages</li>
             </ul>
-            <button type="button">Order Now</button>
+            <button class="price-card-btn" type="button">Order Now</button>
           </li>
         </ul>
       </div>
@@ -347,7 +352,8 @@
       <section class="review">
         <div class="container">
         <h3 class="review-title">What Clients Say</h3>
-        <p class="review-text">Problems trying to resolve the conflict between the two major realms of Classical physics: Newtonian mechanics </p>
+        <p class="review-text">
+          Problems trying to resolve the conflict between the two major realms of Classical physics: Newtonian mechanics</p>
           <ul class="review-list">
             <li class="review-item">
               <svg class="review-icon-stars" width="106" height="18">
@@ -356,6 +362,7 @@
               <p class="review-descr">Product helps you see how many 
                 more days you need to work to 
                 reach your financial goal.</p>
+                <div class="review-wrap">
                 <img
                 src="./images/client1-min.png"
                 alt="Man in a white jacket"
@@ -363,8 +370,12 @@
                 height="50"
                 class="review-img"
                 />
+             
+                <div class="review-miniwrap">
                 <h4 class="review-subtitle">Wahid Ari</h4>
                 <p class="review-subtitle-descr">Designer</p>
+              </div>
+            </div>
             </li>
             <li class="review-item">
               <svg class="review-icon-stars" width="106" height="18">
@@ -373,6 +384,7 @@
               <p class="review-descr">Product helps you see how many 
                 more days you need to work to 
                 reach your financial goal.</p>
+                <div class="review-wrap">
                 <img
                 src="./images/client2-min.png"
                 alt="Man in a grey shirt"
@@ -380,8 +392,11 @@
                 height="50"
                 class="review-img"
                 />
+                <div class="review-miniwrap">
                 <h4 class="review-subtitle">Wahid Ari</h4>
                 <p class="review-subtitle-descr">Designer</p>
+                </div>
+                </div>
             </li>
             <li class="review-item">
               <svg class="review-icon-stars" width="106" height="18">
@@ -390,6 +405,7 @@
               <p class="review-descr">Product helps you see how many 
                 more days you need to work to 
                 reach your financial goal.</p>
+                <div class="review-wrap">
                 <img
                 src="./images/client3-min.png"
                 alt="Man in a red shirt"
@@ -397,8 +413,11 @@
                 height="50"
                 class="review-img"
                 />
+                <div class="review-miniwrap">
                 <h4 class="review-subtitle">Wahid Ari</h4>
                 <p class="review-subtitle-descr">Designer</p>
+                </div>
+                </div>
             </li>
           </ul>
         </div>
@@ -407,9 +426,14 @@
 
 
 
-
-          <p>Join 100 Compannies who boost their business with Product</p>
-          <button type="button">Get This</button>
+         <section class="join">
+          <div class="container join-container">
+           <p class="join-text">Join 100 Compannies who boost their business with Product</p>
+          
+           <button class="join-btn" type="button">Get This</button>
+          </div>
+         </section>
+         
 
     </main>
 
@@ -419,7 +443,7 @@
     <footer class="footer">
       <div class="container footer-container">
       <div class="footer-part-one">
-      <a href="./index.html" class="logo">
+      <a href="./index.html" class="logo logo-footer">
         <img 
         src="./images/logo.svg"
          alt="logo" 
@@ -454,20 +478,20 @@
 
 
     <div class="footer-part-two">
-      <h4 class="subtitle-footer">resource</h4>
-      <ul>
-        <li>About Us</li>
-        <li>Blog</li>
-        <li>Contact</li>
-        <li>FAQ</li>
+      <h4 class="subtitle-footer">Resource</h4>
+      <ul class="footer-resource-list">
+        <li class="footer-resource-item">About Us</li>
+        <li class="footer-resource-item">Blog</li>
+        <li class="footer-resource-item">Contact</li>
+        <li class="footer-resource-item">FAQ</li>
       </ul>
     </div>
     <div class="legal-stuff">
       <h4 class="subtitle-footer">Legal Stuff</h4>
-      <ul>
-        <li>Disclaimer</li>
-        <li>Financing</li>
-        <li>Privacy Policy</li>
+      <ul class="footer-legal-list">
+        <li class="footer-legal-item">Disclaimer</li>
+        <li class="footer-legal-item">Financing</li>
+        <li class="footer-legal-item">Privacy Policy</li>
       </ul>
     </div>
 
@@ -490,7 +514,7 @@
   </div>
     
     </div>
-    <p>Made With Love By Figmaland All Right Reserved 
+    <p class="footer-last-text">Made With Love By Figmaland All Right Reserved 
     </p>
     </footer>
   </body>
