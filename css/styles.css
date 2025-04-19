@@ -330,7 +330,6 @@ height: 35px;
 background-image: url(../images/tick.svg);
 background-repeat: no-repeat;
 background-position: center;
-
 }
 
 
@@ -705,7 +704,8 @@ background-repeat: no-repeat;
 background-position: right;
 box-shadow: 0 0 32px 0 rgba(0, 0, 0, 0.15);
 padding: 49px 46px 56px 51px;
-margin: 0 auto;
+
+
 }
 
 .join-text {
@@ -715,6 +715,7 @@ line-height: 1.514;
 color: #fff;
 max-width: 510px;
 margin-bottom: 46px;
+
 }
 
 .join-btn {
