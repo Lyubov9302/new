@@ -296,15 +296,10 @@ margin-bottom: 25px;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.63;
-    color: #22343d;  
-    margin-bottom: 25px; 
-   
+
 }
 
-.support-list-text {
-    position: relative;
-    padding-left: 30px;
-}
+
 
 
 .services-extrasubtitle {
@@ -316,32 +311,59 @@ margin-bottom: 12px;
 
 }
 
-.support-list-text::before {
-content: "";
-display: block;
-position: absolute;
-left: 0;
-top: 50%;
-transform: translateY(-50%);
+.management-sub-item {
+    margin-bottom: 25px;
+}
+
+.management-sub-item:nth-child(2) {
+    margin-bottom: 0;
+}
+
+.collab-sub-item {
+    margin-bottom: 25px; 
+}
+
+.collab-sub-item:nth-child(2) {
+    margin-bottom: 0;
+}
+
+.services-sub-item {
+    display: flex;
+    align-items: center;
+   margin-bottom: 25px;
+}
+
+.services-sub-item:last-child {
+    margin-bottom: 0;
+}
+
+.support-icon-container {
+display: flex;
+align-items: center;
+justify-content: center;
+padding: 0;
 border: 2.92px solid #fff;
 border-radius: 14px;
 width: 35px;
 height: 35px;
-background-image: url(../images/tick.svg);
-background-repeat: no-repeat;
-background-position: center;
+margin-right: 30px;
+flex-shrink: 0;
 }
 
 
-.services-sub-item:nth-child(1) .support-list-text::before {
+.support-icon {
+    fill: #fff;
+}
+
+.services-sub-item:nth-child(1) .support-icon-container {
     background-color: #f90;
 }
 
-.services-sub-item:nth-child(2) .support-list-text::before {
+.services-sub-item:nth-child(2) .support-icon-container {
     background-color: #f03e3d;
 }
 
-.services-sub-item:nth-child(3) .support-list-text::before {
+.services-sub-item:nth-child(3) .support-icon-container {
     background-color: #4d8dff;
 }
 
@@ -459,7 +481,6 @@ font-size: 16px;
 line-height: 1.75;
 color: #22343d;
 margin-bottom: 12px;
-padding-left: 24px;
 }
 
 .strateg-name {
@@ -484,16 +505,17 @@ font-size: 24px;
 line-height: 1.67;
 color: #22343d;
 max-width: 296px;
- padding-left: 27px;
 }
 
 .strateg-item:nth-child(2) .strateg-subtitle {
     color: #02897a;
 }
 
-.strateg-img {
-    margin-bottom: 24px;
+.strateg-minicontainer {
+    padding: 24px 27px 40px 27px;
 }
+
+
 
 /* price */
 
@@ -551,18 +573,22 @@ margin-bottom: 8px;
 
 
 .price-value {
-
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 7px;
 }
 
 
 .amount {
+    font-family: "Montserrat", sans-serif;
     font-weight: 700;
     font-size: 76px;
     line-height: 1.31579;
     letter-spacing: 0em;
     text-align: center;
     color: #02897a;   
-    margin-right: 7px;
+   
 }
 
 .currency {
@@ -571,7 +597,8 @@ font-size: 24px;
 line-height: 1.25;
 letter-spacing: 0em;
 color: #02897a;
-
+margin-bottom: 4px;
+text-align: start;
 }
 
 .per-month {
@@ -582,7 +609,17 @@ letter-spacing: 0.01em;
 color: #afafaf;
 }
 
+.amount-color {
+    color: #fff;
+}
 
+.per-month-color {
+    color: #e0e0e0;
+}
+
+.currency-color {
+    color: #fff;
+}
 
 
 
@@ -599,12 +636,20 @@ color: #afafaf;
     text-align: center;
 }
 
+
+.price-card-text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.375;
+    letter-spacing: 0.01em;
+    color: #22343d;
+}
+
+.price-card-text-color {
+    color: #fff;
+}
+
 .price-card-item {
-font-weight: 500;
-font-size: 16px;
-line-height: 1.375;
-letter-spacing: 0.01em;
-color: #22343d;
 margin-bottom: 16px;
 text-align: center;
 }
@@ -627,8 +672,18 @@ display: block;
 margin: 0 auto;
 }
 
+.price-card-btn-color {
+    color: #02897a;
+    background-color: #fff;
+}
 
+.price-subtitle-color {
+    color: #fff;
+}
 
+.price-descr-color {
+    color: #fff;
+}
 
 
 /* review */
@@ -656,7 +711,8 @@ color: #22343d;
 max-width: 537px;
 margin-bottom: 40px;
 text-align: center;
-
+margin-left: auto;
+margin-right: auto;
 }
 
 .review-list {
@@ -756,6 +812,7 @@ color: #02897a;
 
 .footer-part-two {
     margin-right: 129px;
+    min-width: 118px;
 }
 
 
@@ -793,10 +850,21 @@ font-size: 20px;
 line-height: 1.5;
 color: #22343d;
 margin-bottom: 8px;
+display: block;
 }
 
 .legal-stuff {
 margin-right: 83px;
+min-width: 131px;
+}
+
+
+.footer-resource-link, .footer-legal-link {
+font-weight: 400;
+font-size: 16px;
+line-height: 2.19;
+color: #22343d;
+display: block;
 }
 
 
@@ -824,17 +892,15 @@ margin-bottom: 30px;
 
 .footer-label {
     position: relative;
-  
 }
 
 .footer-input-icon {
     position: absolute;
-    left: 12px;
     fill: #02897a; 
-    top: 50%;
-    left: 12px;
-    transform: translateY(-50%);
+     top: 50%
+     left: 12px;
     pointer-events: none;
+    transform: translateY(-50%);
 }
 
 .footer-input {
@@ -846,6 +912,7 @@ background-color: transparent;
 outline: transparent;
 padding-left: 42px;
 margin-bottom: 25px;
+outline: none;
 
 }
 
