@@ -960,3 +960,27 @@ line-height: 1.88;
 color: #22343d;
 text-align: center;
 }
+
+
+
+/* Customer.html */
+
+.clients {
+    padding-top: 100px;
+    padding-bottom: 117px;
+}
+
+.clients-title {
+    font-weight: 700;
+    font-size: 40px;
+    color: #22343d; 
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.clients-list {
+    display: flex;
+    gap: 64px;
+    justify-content: center;
+    align-items: center;
+}
