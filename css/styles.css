@@ -266,6 +266,9 @@ margin-bottom: 18px;
         clip: rect(0 0 0 0);
         overflow: hidden;
 }
+.services {
+    padding-bottom: 150px;
+}
 
 
 .services-text-title {
@@ -371,21 +374,22 @@ flex-shrink: 0;
 .services-item {
     display: flex;
     gap: 84px;
-    padding-bottom: 100px;
+    margin-bottom: 100px;
     justify-content: center;
     align-items: center;
 }
 
+.services-item:last-child {
+    margin-bottom: 0;
+}
 
-.parts-services 
-   
+
 
 /* process */
 
-
 .process {
-padding-top: 50px;
-padding-bottom: 50px;
+padding-bottom: 100px;
+
 }
 
 .process-btn {
@@ -453,7 +457,7 @@ margin-bottom: 64px;
 /* strategies */
 
 .strategies {
-    padding-top: 50px;
+
    padding-bottom: 171px;
 }
 
@@ -718,6 +722,7 @@ margin-right: auto;
 .review-list {
     display: flex;
     gap: 64px;
+  
 }
 
 .review-item {
@@ -725,7 +730,12 @@ border: 1px solid #dedede;
 border-radius: 5px;
 padding: 30px 35px;
 width: 327px;
-height: 240px;
+
+}
+
+.review-item-container {
+
+   
 }
 
 .review-icon-stars {
@@ -897,7 +907,7 @@ margin-bottom: 30px;
 .footer-input-icon {
     position: absolute;
     fill: #02897a; 
-     top: 50%
+     top: 10px;
      left: 12px;
     pointer-events: none;
     transform: translateY(-50%);
